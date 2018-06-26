@@ -55,6 +55,10 @@ textarea{
     /* border-radius: 50px; */
     border-Bottom-right-radius: 12px;
     background-color: rgb(242, 250, 245);
+} 
+
+.cprogram{
+    margin-left:24px;
 }
 .javaprogram{
     margin-left: 24px;
