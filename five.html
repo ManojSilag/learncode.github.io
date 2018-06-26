@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3rd largest number in an array Program</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Seaweed+Script" rel="stylesheet">
+
+</head>
+<body>
+    <div class= "container1">
+        <div class = upperrow>
+            <img class="symbol" src="symbol.png" width="80px" height="80px">
+            <h1 class="heading"><strong>Learn Code Online</strong></h1>
+        </div>
+        <div class = "programeName"><h1 class="hi animated fadeInUp"><span>3rd largest number in an array Program</span></h1>
+        </div>
+        <div class = "Question"><h2>An <a href="https://en.wikipedia.org/wiki/Array_data_structure" target="_blank" style="text-decoration: none; color: rgb(30, 172, 30);">Array</a> is a collection of data items, all of the same type, accessed using a common name.
+                A one-dimensional array is like a list;  A two dimensional array is like a table.This program findes third largest element in an array
+            </h2></div>
+        <div class="program">
+            
+            <div class = "cprogram">
+                 <h1>C program</h1>
+                <textarea name="message" >
+
+#include <bits/stdc++.h>
+void thirdLargest(int arr[], int arr_size)
+{
+/* There should be atleast three elements */
+if (arr_size < 3)
+{
+printf(" Invalid Input ");
+return;
+}
+int first = arr[0];
+for (int i = 1; i < arr_size ; i++)
+if (arr[i] > first)
+first = arr[i];
+int second = INT_MIN;
+for (int i = 0; i < arr_size ; i++)
+if (arr[i] > second && arr[i] < first)
+second = arr[i];
+// Find third largest element
+int third = INT_MIN;
+for (int i = 0; i < arr_size ; i++)
+if (arr[i] > third && arr[i] < second)
+third = arr[i];
+printf("The third Largest element is %d\n", third);
+}
+
+/* Driver program to test above function */
+int main()
+{
+int arr[] = {12, 13, 1, 10, 34, 16};
+int n = sizeof(arr)/sizeof(arr[0]);
+thirdLargest(arr, n);
+return 0;
+}
+                </textarea>
+            </div>
+<div class="javaprogram">
+                <h1>Java program</h1>
+                <textarea name="message" >
+public class ThirdLargestInArrayExample{  
+public static int getThirdLargest(int[] a, int total){  
+int temp;  
+for (int i = 0; i < total; i++)   
+{  
+for (int j = i + 1; j < total; j++)   
+{  
+if (a[i] > a[j])
+{  
+temp = a[i];  
+a[i] = a[j];  
+a[j] = temp;  
+}  
+}  
+}  
+return a[total-3];  
+}  
+public static void main(String args[]){  
+int a[]={1,2,5,6,3,2};  
+int b[]={44,66,99,77,33,22,55};  
+System.out.println("Third Largest: "+getThirdLargest(a,6));   
+}}  
+</textarea>
+            </div>
+        </div>
+        </div>
+        <div class ="bottomrow">
+            <button class="btn btn-primary btn-xl " value="Back" onclick="window.location.href='four.html'"><strong>Back</strong></button>
+        </div>
+        </div>
+</body>
+</html>

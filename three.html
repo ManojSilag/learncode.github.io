@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fibonacci program</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Seaweed+Script" rel="stylesheet">
+</head>
+<body>
+    <div class= "container1">
+        <div class = upperrow>
+            <img class="symbol" src="symbol.png" width="80px" height="80px">
+            <h1 class="heading"><strong>Learn Code Online</strong></h1>
+        </div>
+        <div class = "programeName"><h1 class="hi animated fadeInUp"><span>Factorial numbers Program</span></h1>
+        </div>
+        <div class = "Question"><h2>For an integer n greater than or equal to 1, the <a href="https://en.wikipedia.org/wiki/Factorial" target="_blank" style="text-decoration: none; color: rgb(30, 172, 30);">
+        factorial</a>
+             is the product of all integers less than or equal to n but greater 
+            than or equal to 1. The factorial value of 0 is defined as equal to 1. 
+            The factorial values for negative integers are not defined.</h2></div>
+        <div class="program">
+            
+            <div class = "cprogram">
+                 <h1>C program</h1>
+                <textarea name="message" >
+
+ #include<stdio.h>
+ // function to find factorial of given number
+ unsigned int factorial(unsigned int n)
+ {
+ if (n == 0)
+ return 1;
+ return n*factorial(n-1);
+ }
+ int main()
+ {
+ int num = 5;
+ printf("Factorial of %d is %d", num, factorial(num));
+ return 0;
+ }
+                        
+                </textarea>
+            </div>
+<div class="javaprogram">
+                <h1>Java program</h1>
+                <textarea name="message" >
+ class Test
+ {
+ // method to find factorial of given number
+ static int factorial(int n)
+ {
+ if (n == 0)
+ return 1;
+ return n*factorial(n-1);
+ }
+ // Driver method
+ public static void main(String[] args) 
+ {
+ int num = 5;
+ System.out.println("Factorial of "+ num + " is " + factorial(5));
+ }
+ }
+
+                </textarea>
+            </div>
+        </div>
+        </div>
+        <div class ="bottomrow">
+            <button class="btn btn-primary btn-xl " value="Back" onclick="window.location.href='two.html'"><strong>Back</strong></button>
+            <button class="btn btn-primary btn-xl " value="continue" onclick="window.location.href='four.html'"><strong>Next</strong></button>
+        </div>
+        </div>
+</body>
+</html>

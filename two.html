@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fibonacci program</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Seaweed+Script" rel="stylesheet">
+
+</head>
+<body>
+    <div class= "container1">
+        <div class = upperrow>
+            <img class="symbol" src="symbol.png" width="80px" height="80px">
+            <h1 class="heading"><strong>Learn Code Online</strong></h1>
+        </div>
+        <div class = "programeName"><h1 class="hi animated fadeInUp"><span>Fibonacci Program</span></h1>
+        </div>
+        <div class = "Question"><h2>The <a href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank" style="text-decoration: none; color: rgb(30, 172, 30);">Fibonacci Sequence</a> is the series of numbers:
+            0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+            The next number is found by adding up the two numbers before it.
+            The 2 is found by adding the two numbers before it (1+1),
+            The 3 is found by adding the two numbers before it (1+2).
+                                </h2></div>
+        <div class="program">
+            
+            <div class = "cprogram">
+                 <h1>C program</h1>
+                <textarea name="message" >
+ #include <stdio.h>
+ int main()
+ {
+ int n, first = 0, second = 1, next, c;
+ printf("Enter the number of terms\n");
+ scanf("%d", &n);
+ printf("First %d terms of Fibonacci series are:\n", n);
+ for (c = 0; c < n; c++)
+ {
+ if (c <= 1)
+ next = c;
+ else
+ {
+ next = first + second;
+ first = second;
+ second = next;
+ }
+ printf("%d\n", next);
+ }
+ return 0;
+ }
+                </textarea>
+            </div>
+<div class="javaprogram">
+                <h1>Java program</h1>
+                <textarea name="message" >
+class FibonacciExample{  
+public static void main(String args[])  
+{    
+ int n1=0,n2=1,n3,i,count=10;    
+ System.out.print(n1+" "+n2);//printing 0 and 1    
+    
+ for(i=2;i<count;++i)//loop starts from 2 because 0 and 1 are already printed    
+ {    
+  n3=n1+n2;    
+  System.out.print(" "+n3);    
+  n1=n2;    
+  n2=n3;    
+ }    
+  
+}}  
+
+                </textarea>
+            </div>
+        </div>
+        </div>
+        <div class ="bottomrow">
+            <button class="btn btn-primary btn-xl " value="Back" onclick="window.location.href='one.html'"><strong>Back</strong></button>
+            <button class="btn btn-primary btn-xl " value="continue" onclick="window.location.href='three.html'"><strong>Next</strong></button>
+        </div>
+        </div>
+</body>
+</html>

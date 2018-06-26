@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Palindrome program</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Seaweed+Script" rel="stylesheet">
+
+</head>
+<body>
+    <div class= "container1">
+        <div class = upperrow>
+            <img class="symbol" src="symbol.png" width="80px" height="80px">
+            <h1 class="heading"><strong>Learn Code Online</strong></h1>
+        </div>
+        <div class = "programeName"><h1 class="hi animated fadeInUp"><span>Palindrome Program</span></h1>
+        </div>
+        <div class = "Question"><h2> A <a href="https://en.wikipedia.org/wiki/Palindromic_number" target="_blank" style="text-decoration: none; color: rgb(30, 172, 30);">Palindrome number</a> is a which remains the same on reversal. For example, some palindrome numbers are 121, 12321. To check whether a 
+            number is a palindrome or not first we reverse it and then compare the number obtained with the original number, if both are same 
+            then the number is palindrome otherwise not.
+            This are a simple Program that 
+            accepts an Input number from User and Checks whether the 
+            number is Palindrome or not. 
+                                </h2></div>
+        <div class="program">
+            
+            <div class = "cprogram">
+                 <h1>C program</h1>
+                <textarea name="message" >
+ 
+ #include <stdio.h>
+ int main()
+ {
+ int n, reversedInteger = 0, remainder, originalInteger;
+ printf("Enter an integer: ");
+ scanf("%d", &n);
+ originalInteger = n;
+ // reversed integer is stored in variable 
+ while( n!=0 )
+ {
+ remainder = n%10;
+ reversedInteger = reversedInteger*10 + remainder;
+ n /= 10;
+ }
+ // palindrome if orignalInteger and reversedInteger are equal
+ if (originalInteger == reversedInteger)
+    printf("%d is a palindrome.", originalInteger);
+ else
+ printf("%d is not a palindrome.", originalInteger);
+ return 0;
+ }
+                </textarea>
+            </div>
+            <div class="javaprogram">
+                <h1>Java program</h1>
+                <textarea name="message" >
+
+ class PalindromeExample{
+ public static void main(String args[]){
+ int r,sum=0,temp;
+ int n=454;//It is the number variable to be checked for palindrome
+ temp=n;
+ while(n>0){
+ r=n%10;  //getting remainder
+ sum=(sum*10)+r;
+ n=n/10;
+ }
+  if(temp==sum)
+  System.out.println("palindrome number ");
+  else
+  System.out.println("not palindrome");
+  }
+ }</textarea>
+            </div>
+        </div>
+        </div>
+        <div class ="bottomrow">
+            <button class="btn btn-primary btn-xl " value="Back" onclick="window.location.href='index.html'"><strong>Back</strong></button>
+            <button class="btn btn-primary btn-xl " value="continue" onclick="window.location.href='two.html'"><strong>Next</strong></button>
+        </div>
+        </div>
+</body>
+</html>

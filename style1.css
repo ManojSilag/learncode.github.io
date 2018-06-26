@@ -1,0 +1,119 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    /* background-color:rgb(218, 216, 216); */
+    background-image: url("5back12.jpg")
+    
+}
+.upperrow{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display:flex;
+    flex-wrap: wrap;
+    background-color:rgb(153, 148, 148);
+    width: 100%;
+    font-family: cursive;
+    cursor: default;
+}
+
+
+   .Question{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.2em; 
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 5px;
+    background-color: #CFDEBA;
+    cursor: default;
+}
+
+.program{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.cprogram:hover{
+    transform: scale(1.1);
+    transition: 80ms;
+}
+.javaprogram:hover{
+    transform: scale(1.1);
+    transition: 80ms;  
+}
+
+textarea{
+    font-size: 22px;
+    border: #060F04 3px solid;
+    height: 500px;
+    width: 450px;
+    resize: none;
+    /* border-radius: 50px; */
+    border-Bottom-right-radius: 12px;
+    background-color: rgb(242, 250, 245);
+}
+.javaprogram{
+    margin-left: 24px;
+}
+/*............................................................*/
+
+.bottomrow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+button{
+    font-size: 25px;
+    font-family:cursive;
+    display: block;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+  border-radius: 300px; 
+  align-self: auto;
+}
+
+.btn-primary {
+  
+  background-color: #32EE00;
+  border-color: rgb(179, 223, 182); }
+
+.btn-primary:hover {
+  background-color: #1bec48;
+  border-color: #000000;
+  color: black;
+  border-width: 3px;
+  cursor: pointer;
+}
+
+/*-------------------------------------------------*/
+
+.programeName{
+  
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+  /* position: relative; */
+  margin:0;
+}
+.hi{
+    font-family: "Seaweed Script";
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: default;
+}
+.programeName span {
+  background-color: rgb(117, 107, 107);
+  padding: 0 0.3em;
+}
+h2{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
